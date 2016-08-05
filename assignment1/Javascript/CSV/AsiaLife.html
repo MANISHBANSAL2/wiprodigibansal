@@ -32,7 +32,7 @@ var causes = ["LifeExpectancyAtBirthMale(years)", "LifeExpectancyAtBirthFemale(y
 
 //var parseDate = d3.time.format("%m/%Y").parse;
 
-var margin = {top: 20, right: 50, bottom: 30, left: 20},
+var margin = {top: 20, right: 50, bottom: 100, left: 100},
    width = 950 - margin.left - margin.right,
    height = 500 - margin.top - margin.bottom;
 
@@ -50,7 +50,7 @@ var xAxis = d3.svg.axis()
 
 var yAxis = d3.svg.axis()
    .scale(y)
-   .orient("right");
+   .orient("left");
 
 var svg = d3.select("body").append("svg")
    .attr("width", width + margin.left + margin.right)
@@ -114,16 +114,16 @@ d3.json("../JSON/lifeExpectancy.json", function(error, crimea) {
 
    svg.append("rect")
       .attr("x", 220 )
-      .attr("y", 470 )
+      .attr("y", 420 )
       .style("fill", "black")
       .attr("width", 20)
       .attr("height", 15)
    svg.append("text")
       .attr("x", 250 )
-      .attr("y", 477 )
+      .attr("y", 440 )
       .attr("width", 650)
       .style("fill", "black")
-      .style("font-size", "20px")
+      .style("font-size", "40px")
       .text("year")
 
   svg.append("text")
@@ -144,7 +144,7 @@ d3.json("../JSON/lifeExpectancy.json", function(error, crimea) {
 
  svg.append("g")
      .attr("class", "axis axis--y")
-     .attr("transform", "translate(" + width + ",0)")
+     // .attr("transform", "translate(" + width + ",0)")
      .call(yAxis);
 });
 

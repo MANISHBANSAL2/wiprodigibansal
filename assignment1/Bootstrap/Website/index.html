@@ -1,401 +1,408 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		
-		<!-- Website Title & Description for Search Engine purposes -->
-		<title>BootStrap</title>
-		<meta name="description" content="">
-		
-		<!-- Mobile viewport optimized -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		
-		<!-- Bootstrap CSS -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
-		
-		<!-- Custom CSS -->
-		<link href="includes/css/styles.css" rel="stylesheet">
-		
-		<!-- Include Modernizr in the head, before any other Javascript -->
-		<script src="includes/js/modernizr-2.6.2.min.js"></script>
-		
-	</head>
-	<body>
+<head>
+	
+	<!-- Website Title & Description for Search Engine purposes -->
+	<title>BootStrap</title>
+	<meta name="description" content="">
+	
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<!-- Bootstrap CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+	
+	<!-- Custom CSS -->
+	<link href="includes/css/styles.css" rel="stylesheet">
+	
+	<!-- Include Modernizr in the head, before any other Javascript -->
+	<script src="includes/js/modernizr-2.6.2.min.js"></script>
+	
+</head>
+<body>
 	
 	<div class="container" id="main">
 
-	<div class="navbar navbar=fixed-top">
-	<div class="container">
-	  	<button class="navbar-toggle" data-target=".navbar-resposive-collapse" data-toggle="collapse" type="button">
-	  		<span class="icon-bar"></span>
-	  		<span class="icon-bar"></span>
-	  		<span class="icon-bar"></span>
-	  	</button>
-		<a class="navbar-brand" href="/"><img src="images/logo.png" alt="Your Logo"></a>
-		<div class="nav-collapse navbar-responsive-collapse">  
-		<ul class="nav navbar-nav">
-			<li class="active">
-				<a href="#">HOME</a>
-			</li>
-			
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">INTERIOR DESIGN<strong class="caret"></strong></a>
-				
-				<ul class="dropdown-menu">
-				<li>
-					<a href="#">Fine Furnituer</a>
-				</li>
-				<li>
-					<a href="#">Design/ReModeling</a>
-				</li>
-				<li>
-					<a href="#">Dining</a>
-				</li>
-				<li class="divider">
-				</li>
-				<li class="dropdown-header">More services</li>
-				<li>
-					<a href="#">LandScape Design</a>
-				</li>
-				<li>
-					<a href="#">Home Technology</a>
-				</li>
-				</ul>
-			</li>
-		</ul>
-		
-		<form class="navbar-form pull-left">
-			<input type="text" class="form-control" placeholder="search this site.." id="searchInput">
-		<button type="Submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span>
-		</button>
-		</form>
-		<ul class="nav navbar-nav pull-right">
-		<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>My Account <strong class="caret"></strong></a>
-			
-			<ul class="dropdown-menu">
-			
-			<li>
-				<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
-			</li>
-			<li>
-				<a href="#"><span class="glyphicon glyphicon-refresh"></span>Update Profile</a>
-			</li>
-			<li>
-				<a href="#"><span class="glyphicon glyphicon-briefcase"></span>Billing</a>
-			</li>
-			<li class="divider">
-			</li>
-			<li>
-				<a href="#"><span class="glyphicon glyphicon-off"></span>Sign Out</a>
-			</li>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
 
-			</ul>
-		</li>
-		</ul>
-		</div>
-	</div>
-	</div>
-
-	<div class="carousel slide" id="myCarousel"> 
-
-		<ol class="carousel-indicators">
-			<li class="active" data-slide-to="0" data-target="myCarousel"></li>
-			<li data-slide-to="1" data-target="myCarousel"></li>
-			<li data-slide-to="2" data-target="myCarousel"></li>
-		</ol>
-	
-	<div class="carousel-inner">
-	<div class="item active" id="slide1">
-		<div class="carousel-caption">
-		<h4>LUXE STYLE</h4>
-			<p>Learn how to build your first responsive website the brand new Twitter Bootstarp3!</p>
-			
-		</div>
-	</div>
-	
-	<div class="item" id="slide2">
-		<div class="carousel-caption">
-			<h4>Meet Us For Your House!</h4>
-			<p>PSD to HTML5 &amp; css3 is popular course that has helped thousands of aspiring web designers launch thier web design career.</p>
-		</div>
-	</div>
-
-	<div class="item" id="slide3">
-		<div class="carousel-caption">
-			<h4>YOUR DREAM HOUSE!</h4>
-			<p>Learn how to how to buy a perfect domain name and hosting package and get your website live on the web with ease.</p>
-		</div>
-	</div>
-	</div>
-
-	<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
-	<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
-	</div>
-
-	<div  class="row" id="bigcallout">
-		<div class="col-12">
-
-		<div class="alert alert-success alert-block fade in" id="successAlert">
-			<button type="button" class="close" data-dismiss="alert">&times;</button>
-
-			<h4>Success!</h4>
-			<p>Thanks we will contact you soon</p>
-		</div>
-			<div class="well well-small visible-sm">
-				<a href="" class="btn btn-large btn-block btn-default" id="alertMessage"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
-			</div>
-			<div class=""well>
-				<div class="page-header">
-					<h1>Professional Interior Designer<small>--Accent design world--</small></h1>
-				</div>
-
-				<p class="lead">Accent Design World,AZ Contents Interiors </p>
-				
-				<p>We offer complete interior design in Tucson from our beautiful, state-of-the-art showroom and complete design resource center. Our collection includes a wide variety of pieces you won’t find anywhere else, including unique southwest furniture and contemporary furniture! We provide quality, high-end furnishing products including upholstery, case goods, modular office furniture systems, area rugs, window coverings, custom bedding, mattresses, lighting, art work, accessories, flooring and specialty wall finishes.</p>
-
-				<a href="" class="btn btn-large btn-primary" id="alertMe">click and meet us</a>
-				<a href="" class="btn btn-large btn-link">If you have any Query write us</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="row" id="featuresHeading">
-	<div class="col-12">
-		<h2>Our More Designs</h2>
-			<p class="lead">Contents Interiors has been offering clients timeless design solutions for more than 36 years. We strive to provide our clients with the latest in furnishings for the home or office, including innovative custom furnishings, window treatments, lighting, accessories and unique artwork by local artists.</p>
-	</div>
-	</div>
-
-	<div class="row" id="features">
-		<div class="col-sm-4 feature">
-			<div class="panel">
-				<div class="panel-heading">
-					<h3 class="panel-title">Your Dream House</h3>
-				</div>
-				<img src="images/badge_html5.jpg" alt="BathRoom" class="img-circle">
-				<p> The beach is right outside this house in Marina del Rey, California, but you'd never have known it from the dark and cramped master bath. "The clients don't like a lot of color"</p>
-
-				<a href="http://www.homeanddesign.com/category/kitchen-bath/bath-products" target="_blank" class="btn btn-warning btn-block">See More Designs</a>
-			</div>
-		</div>
-
-		<div class="col-sm-4 feature">
-			<div class="panel">
-				<div class="panel-heading">
-					<h3 class="panel-title">Bathing Brilliance</h3>
-				</div>
-				<img src="images/badge_css3.jpg" alt="BathRoom" class="img-rectangle">
-				<p> The lavish bath pictured here presents the Lineare Tortora line of rectified porcelain tiles by Roberto Cavalli Home. Walls, wainscot and floor are all clad in the tile, which comes in a range of sizes and shades.</p>
-
-				<a href="http://www.homeanddesign.com/category/kitchen-bath/bath-products" target="_blank" class="btn btn-danger btn-block">See More Designs</a>
-			</div>
-		</div>
-
-		<div class="col-sm-4 feature">
-			<div class="panel">
-				<div class="panel-heading">
-					<h3 class="panel-title">Bath Time</h3>
-				</div>
-				<img src="images/badge_bootstrap.jpg" alt="BathRoom" class="img-circle">
-				<p> BOLD AND BEAUTIFUL-Twin-Stars Clarendon vanity add unique touch to any decor.Its two-toned marquetry veneer contrasts with chrome-plated decorative feet.</p>
-
-				<a href="http://www.homeanddesign.com/category/kitchen-bath/bath-products" target="_blank" class="btn btn-info btn-block">See More Designs</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="row" id="moreInfo">
-		<div class="col-sm-6">
-			<h3>Design for Space</h3>
-			<div class="tabbable">
-				<ul class="nav nav-tabs">
-					<li class="active"><a href="#tab1" data-toggle="tab">section 1</a></li>
-					<li><a href="#tab2" data-toggle="tab">section 2</a></li>
-				</ul>
-				<div class="tab-content">
-					<div class="tab-pane active" id="tab1">
-						<h4><span class="glyphicon glyphicon-map-marker"></span> Our Location <small> Our Spoot</small></h4>
-
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.102262938646!2d77.65771161435256!3d12.836667921299016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c8730fb7b6b%3A0xf15089219482f760!2sWipro+Technologies%2C+EC-III%2C+Tower+8%2C!5e0!3m2!1sen!2sca!4v1469528745248" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-						<p>
-							For high quality, attractive living room furniture in Tucson at competitive prices, Contents Interiors is your destination.Seeking to furnish or beautify your master bedroom? Beautiful and stylish Tucson bedroom furniture can be found in our state-of-the-art showroom.Indulgences: FashionBY SHARON JAFFE DAN
-							GOING GREEN  The CH Carolina Herrera boutique in CityCenterDC heralds the season with a silk-blend, off-the-shoulder top ($315) and cropped trousers with waist-tie detailing
-						</p>
-						<p>
-							Seeking to furnish or beautify your master bedroom? Beautiful and stylish Tucson bedroom furniture can be found in our state-of-the-art showroom.Dining tables, chairs, buffets, and other dining furniture to suit your lifestyle and dining room needs for your Tucson desert home.</p>
-					</div>
-					<div class="tab-pane" id="tab2">
-						<h4>You may also like <small>Using housebeautiful.com</small></h4>
-						<img src="images/alsolike.jpg" class="thumbnail pull-left">
-						<p>
-							We offer complete interior design in Tucson from our beautiful,state-of-the-art showroom and complete design resource center.Our collection includes a wide variety of pieces you wont find anywhere else including unique southwest furniture and contemporary furniture!We provide quality, high-end furnishing products including upholstery,case goods, modular office furniture systems, area rugs,window coverings, custom bedding,mattresses,lighting,art work,accessories, flooring and specialty wall finishes.
-						</p>
-
-						<hr>
-						<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal">
-						<span class="glyphicon glyphicon-hand-up" ></span>Click for window!</a>
-						</div>
-						<div class="modal fade" id="myModal">
-							<div class="madal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button class="close" data-dismiss="modal">&times;</button>
-
-										<h4 class="modal-title">Customer Service</h4>
-									</div>
-									<div class="modal-body">
-										<h4>Text a Query</h4>
-
-										<p>When you feel free contact us!</p>
-
-										<h4>Popovers in a window</h4>
-										<a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="What You Want" data-content="Drop Message">May I Help You</a>
-
-										<h4>Tips for Dream House</h4>
-										<a href="http://www.homeanddesign.com/category/kitchen-bath/bath-products">This Link</a> will help you to explore<a href="#"> this one</a>
-
-										<hr>
-										<p><small class="text-muted">Please Text for your Dream House </small></p>
-
-										<form class="form-horizontal">
-											<div class="form-group">
-						<label class="col-lg-2 control-label" for="inputName">Name</label>
-						<div class="col-lg-10">
-							<input class="form-control" id="inputName" placeholder="Name" type="text">
-						</div>
-					</div>
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/"><img src="images/logo.png" alt="Your Logo"></a>
+				<div class="navbar-collapse collapse navbar-responsive-collapse">  
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">HOME</a>
+						</li>
+						
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">INTERIOR DESIGN<strong class="caret"></strong></a>
+							
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Fine Furnituer</a>
+								</li>
+								<li>
+									<a href="#">Design/ReModeling</a>
+								</li>
+								<li>
+									<a href="#">Dining</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li class="dropdown-header">More services</li>
+								<li>
+									<a href="#">LandScape Design</a>
+								</li>
+								<li>
+									<a href="#">Home Technology</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
 					
-					<div class="form-group">
-						<label class="col-lg-2 control-label" for="inputEmail">Email</label>
-						<div class="col-lg-10">
-							<input class="form-control" id="inputEmail" placeholder="Email" type="email">
-						</div>
+					<form class="navbar-form pull-left">
+						<input type="text" class="form-control" placeholder="search this site.." id="searchInput">
+						<button type="Submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span>
+						</button>
+					</form>
+					<ul class="nav navbar-nav pull-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>My Account <strong class="caret"></strong></a>
+							
+							<ul class="dropdown-menu">
+								
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-refresh"></span>Update Profile</a>
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-briefcase"></span>Billing</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-off"></span>Sign Out</a>
+								</li>
+
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="carousel slide" id="myCarousel"> 
+
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="myCarousel"></li>
+				<li data-slide-to="1" data-target="myCarousel"></li>
+				<li data-slide-to="2" data-target="myCarousel"></li>
+			</ol>
+			
+			<div class="carousel-inner">
+				<div class="item active" id="slide1">
+					<div class="carousel-caption">
+						<h4>LUXE STYLE</h4>
+						<p>Learn how to build your first responsive website the brand new Twitter Bootstarp3!</p>
+						
 					</div>
+				</div>
+				
+				<div class="item" id="slide2">
+					<div class="carousel-caption">
+						<h4>Meet Us For Your House!</h4>
+						<p>PSD to HTML5 &amp; css3 is popular course that has helped thousands of aspiring web designers launch thier web design career.</p>
+					</div>
+				</div>
+
+				<div class="item" id="slide3">
+					<div class="carousel-caption">
+						<h4>YOUR DREAM HOUSE!</h4>
+						<p>Learn how to how to buy a perfect domain name and hosting package and get your website live on the web with ease.</p>
+					</div>
+				</div>
+			</div>
+
+			<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+			<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+		</div>
+	</div>
+	<div class="container" id="main">
+		<div  class="row" id="bigcallout">
+			<div class="col-12">
+
+				<div class="alert alert-success alert-block fade in" id="successAlert">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+
+					<h4>Success!</h4>
+					<p>Thanks we will contact you soon</p>
+				</div>
+				<div class="well well-small visible-sm">
+					<a href="" class="btn btn-large btn-block btn-default" id="alertMessage"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
+				</div>
+				<div class="well">
+					<div class="page-header">
+						<h1>Professional Interior Designer<small>(Accent design world)</small></h1>
+					</div>
+
+					<p class="lead">Accent Design World,AZ Contents Interiors </p>
 					
-					<div class="form-group">
-						<label class="col-lg-2 control-label" for="inputMessage">Message</label>
-						<div class="col-lg-10">
-							<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
-							<button class="btn btn-success pull-right" type="submit">Send!</button>
-						</div>
+					<p>We offer complete interior design in Tucson from our beautiful, state-of-the-art showroom and complete design resource center. Our collection includes a wide variety of pieces you won’t find anywhere else, including unique southwest furniture and contemporary furniture! We provide quality, high-end furnishing products including upholstery, case goods, modular office furniture systems, area rugs, window coverings, custom bedding, mattresses, lighting, art work, accessories, flooring and specialty wall finishes.</p>
+
+					<a href="" class="btn btn-large btn-primary" id="alertMe">click and meet us</a>
+					<a href="" class="btn btn-large btn-link">If you have any Query write us</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" id="featuresHeading">
+			<div class="col-12" style="margin-left:20px;">
+				<h2>Our More Designs</h2>
+				<p class="lead">Contents Interiors has been offering clients timeless design solutions for more than 36 years. We strive to provide our clients with the latest in furnishings for the home or office, including innovative custom furnishings, window treatments, lighting, accessories and unique artwork by local artists.</p>
+			</div>
+		</div>
+
+		<div class="row" id="features">
+			<div class="col-sm-4 feature">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Your Dream House</h3>
 					</div>
-										</form>
-										</div>
-										<div class="modal-footer">
-											<button class="btn btn-default" data-dismiss="modal" type="button">Close</button><button class="btn btn-primary" type="button">Save Changes</button>
-										</div>
+					<div class="panel-body">
+						<img src="images/badge_html5.jpg" alt="BathRoom" class="img-circle">
+						<p> The beach is right outside this house in Marina del Rey, California, but you'd never have known it from the dark and cramped master bath. "The clients don't like a lot of color "</p>
+
+						<a href="http://www.homeanddesign.com/category/kitchen-bath/bath-products" target="_blank" class="btn btn-warning btn-block">See More Designs</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 feature">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Bathing Brilliance</h3>
+					</div>
+					<div class="panel-body">
+						<img src="images/badge_css3.jpg" alt="BathRoom" class="img-rectangle">
+						<p> The lavish bath pictured here presents the Lineare Tortora line of rectified porcelain tiles by Roberto Cavalli Home,which comes in a range of sizes and shades.</p>
+
+						<a href="http://www.homeanddesign.com/category/kitchen-bath/bath-products" target="_blank" class="btn btn-danger btn-block">See More Designs</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 feature">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Bath Time</h3>
+					</div>
+					<div class="panel-body">
+						<img src="images/badge_bootstrap.jpg" alt="BathRoom" class="img-circle">
+						<p> BOLD AND BEAUTIFUL-Twin-Stars Clarendon vanity add unique touch to any decor.Its two-toned marquetry veneer contrasts with chrome-plated decorative feet.</p>
+
+						<a href="http://www.homeanddesign.com/category/kitchen-bath/bath-products" target="_blank" class="btn btn-info btn-block">See More Designs</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" id="moreInfo">
+			<div class="col-sm-6">
+				<h3>Design for Space</h3>
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab">section 1</a></li>
+						<li><a href="#tab2" data-toggle="tab">section 2</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+
+							<h4><span class="glyphicon glyphicon-map-marker"></span> Our Location <small> Our Spoot</small></h4>
+
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.102262938646!2d77.65771161435256!3d12.836667921299016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c8730fb7b6b%3A0xf15089219482f760!2sWipro+Technologies%2C+EC-III%2C+Tower+8%2C!5e0!3m2!1sen!2sca!4v1469528745248" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<p>
+								For high quality, attractive living room furniture in Tucson at competitive prices, Contents Interiors is your destination.Seeking to furnish or beautify your master bedroom? Beautiful and stylish Tucson bedroom furniture can be found in our state-of-the-art showroom.Indulgences: FashionBY SHARON JAFFE DAN
+								GOING GREEN  The CH Carolina Herrera boutique in CityCenterDC heralds the season with a silk-blend, off-the-shoulder top ($315) and cropped trousers with waist-tie detailing
+							</p>
+							<p>
+								Seeking to furnish or beautify your master bedroom? Beautiful and stylish Tucson bedroom furniture can be found in our state-of-the-art showroom.Dining tables, chairs, buffets, and other dining furniture to suit your lifestyle and dining room needs for your Tucson desert home.</p>
+							</div>
+							<div class="tab-pane" id="tab2">
+								<h4>You may also like <small>Using housebeautiful.com</small></h4>
+								<img src="images/alsolike.jpg" class="thumbnail pull-left">
+								<p>
+									We offer complete interior design in Tucson from our beautiful,state-of-the-art showroom and complete design resource center.Our collection includes a wide variety of pieces you wont find anywhere else including unique southwest furniture and contemporary furniture!We provide quality, high-end furnishing products including upholstery,case goods, modular office furniture systems, area rugs,window coverings, custom bedding,mattresses,lighting,art work,accessories, flooring and specialty wall finishes Seeking to furnish or beautify your master bedroom? Beautiful and stylish Tucson bedroom furniture can be found in our state-of-the-art showroom.Dining tables, chairs, buffets, and other dining furniture to suit your lifestyle and dining room needs for your Tucson desert home.
+								</p>
+
+								<hr>
+								<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal">
+									<span class="glyphicon glyphicon-hand-up" ></span>Click for window!</a>
 								</div>
+								<div class="modal fade" id="myModal">
+									<div class="madal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button class="close" data-dismiss="modal">&times;</button>
+
+												<h4 class="modal-title">Customer Service</h4>
+											</div>
+											<div class="modal-body">
+												<h4>Text a Query</h4>
+
+												<p>When you feel free contact us!</p>
+
+												<a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="What You Want" data-content="Drop Message">May I Help You</a>
+
+												<h4>Tips for Dream House</h4>
+												<a href="http://www.homeanddesign.com/category/kitchen-bath/bath-products">This Link</a> will help you to explore<a href="#"> this one</a>
+
+												<hr>
+												<p><small class="text-muted">Please Text for your Dream House </small></p>
+
+												<form class="form-horizontal">
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputName">Name</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="inputName" placeholder="Name" type="text">
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputMessage">Message</label>
+														<div class="col-lg-10">
+															<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+															<button class="btn btn-success pull-right" type="submit">Send!</button>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="modal-footer">
+												<button class="btn btn-default" data-dismiss="modal" type="button">Close</button><button class="btn btn-primary" type="button">Save Changes</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> 
 						</div>
 					</div>
-				</div> 
-			</div>
-		</div>
-		<div class="col-sm-6">
-			<h3>Some More Info</h3>
-			<p>if it is because I am a canine that I SO get this…or maybe it has to do with my being close to the earth, being little, that I truly understand how important it is that we tend to our environment and keep it healthy and vibrant for creatures great and small. But I have also seen the headlines in Carol and Tamara’s newspapers- CO2 emissions are a big problem for our world and I am pleased to see members of the residential furnishing community, including our very own Contents Interiors, embracing the challenge of minimizing environmental impact in the business of home furnishings.</p>
-			<h4>A List of Designers and Story</h4>
+					<div class="col-sm-6">
+						<h3>Some More Info</h3>
+						<p> if it is because I am a canine that I SO get this…or maybe it has  to do with my being close to the earth, being little, that I truly understand how important it is that we tend to our environment and keep I am pleased to see members of the residential furnishing community, including our very own Contents Interiors, embracing the challenge of minimizing environmental impact in the business of home furnishings.</p>
+						<h4>A List of Designers and Story</h4>
 
-			<div class="list-group">
-				<a href="#" class="list-group-item">
-					<h4 class="list-group-item-heading">Bruce Bowers</h4>
-					<p class="list-group-item-text">he started winning local acclaim for transforming the homes in the McLean area. Bruce leads our design team and excels in designing spaces that are as functional as they are beautiful. He is sincerely passionate about great craftsmanship and customer service. When Bruce is not busy with his clients, he enjoys kayaking, paddle boarding and generally doing anything outside!</p>
-				</a>
-				<a href="#" class="list-group-item">
-					<h4 class="list-group-item-heading">Wilma Bowers</h4>
-					<p class="list-group-item-text">After a 19-year career as head of Corporate Advertising and Brand Management with Verizon Communications, Wilma joined Bowers in 2001 to help manage the family’s growing business. Wilma makes sure that Bowers’ business processes accentuate the company’s ability to offer the best design and construction services possible.</p>
-				</a>
-				<a href="#" class="list-group-item">
-					<h4 class="list-group-item-heading">John Coburn,Jr.</h4>
-					<p class="list-group-item-text">John has been a leader in the remodeling industry for more than a decade. His management experience with several large corporations is a tremendous asset to Bowers’ clients. He is the Past President and Chairman of the Board of the Washington Metropolitan Chapter of the National Association of the Remodeling Industry (NARI), a professional industry organization. He also served on the NARI National Strategic Planning Committee and was the recipient of the 2002</p>
-				</a>
-			</div>
-			<h5>Home and Design</h5>
-			<p>he started winning local acclaim for transforming the homes in the McLean area. Bruce leads our design team and excels in designing spaces that are as functional as they are beautiful.</p>
-		</div>
-	</div>
-
-	<div class="row" id="mainCourse">
-		<div class="col-12">
-			<h3>Know More about the Interior Design</h3>
-			<div class="thumbnails row">
-				<div class="col-6">
-					<div class="thumbnail">
-						<img src="images/item_webhosting101.jpg">
-
-						<div class="caption">
-							<h3>Whoohoo!</h3>
-
-							<p>We offer complete interior design in Tucson from our beautiful,state-of-the-art showroom and complete design resource center.Our collection includes a wide variety of pieces you wont find anywhere else including unique southwest furniture and contemporary furniture!</p>
-
-							<p><a href="" class="btn btn-primary btn-small" target="_blank">Take Review</a><a href="" target="_blank" class="btn btn-small btn-link">Know more</a></p>
+						<div class="list-group">
+							<a href="#" class="list-group-item">
+								<h4 class="list-group-item-heading">Bruce Bowers</h4>
+								<p class="list-group-item-text">he started winning local acclaim for transforming the homes in the McLean area. Bruce leads our design team and excels in designing spaces that are as functional as they are beautiful. He is sincerely passionate about great craftsmanship and customer service. When Bruce is not busy with his clients, he enjoys kayaking, paddle boarding and generally doing anything outside!</p>
+							</a>
+							<a href="#" class="list-group-item">
+								<h4 class="list-group-item-heading">Wilma Bowers</h4>
+								<p class="list-group-item-text">After a 19-year career as head of Corporate Advertising and Brand Management with Verizon Communications, Wilma joined Bowers in 2001 to help manage the family’s growing business. Wilma makes sure that Bowers’ business processes accentuate the company’s ability to offer the best design and construction services possible.</p>
+							</a>
+							
 						</div>
+						<h5>Home and Design</h5>
+						<p>he started winning local acclaim for transforming the homes in the McLean area.excels in designing spaces that are as functional as they are beautiful.</p>
 					</div>
 				</div>
 
-				<div class="col-6">
-					<div class="thumbnail">
-						<img src="images/item_psd2html5.jpg">
+				<div class="row" id="mainCourse">
+					<div class="col-12">
+						<h3 style="margin-left:20px;">Know More about the Interior Design</h3>
+						<div class="thumbnails row">
+							<div class="col-sm-6">
+								<div class="thumbnail">
+									<img src="images/item_webhosting101.jpg">
 
-						<div class="caption">
-							<h3>Architecture</h3>
+									<div class="caption">
+										<h3>Whoohoo!</h3>
 
-							<p>We offer complete interior design in Tucson from our beautiful,state-of-the-art showroom and complete design resource center.Our collection includes a wide variety of pieces you wont find anywhere else including unique southwest furniture and contemporary furniture!</p>
+										<p>We offer complete interior design in Tucson from our beautiful,state-of-the-art showroom and complete design resource center.Our collection includes a wide variety of pieces you wont find anywhere else including unique southwest furniture and contemporary furniture!</p>
 
-							<p><a href="" class="btn btn-primary btn-small" target="_blank">Take Review</a><a href="" target="_blank" class="btn btn-small btn-link">Know more</a></p>
+										<p><a href="" class="btn btn-primary btn-small" target="_blank">Take Review</a><a href="" target="_blank" class="btn btn-small btn-link">Know more</a></p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="thumbnail">
+									<img src="images/item_psd2html5.jpg">
+
+									<div class="caption">
+										<h3>Architecture</h3>
+
+										<p>We offer complete interior design in Tucson from our beautiful,state-of-the-art showroom and complete design resource center.Our collection includes a wide variety of pieces you wont find anywhere else including unique southwest furniture and contemporary furniture!</p>
+
+										<p><a href="" class="btn btn-primary btn-small" target="_blank">Take Review</a><a href="" target="_blank" class="btn btn-small btn-link">Know more</a></p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<h6>Copyright &copy; 2015 Interior</h6>
+					</div>
+					
+					<div class="col-sm-4">
+						<h6>About Us</h6>
+						<p>Proudly, Bowers Design Build, Inc. is a family-owned and operated business. Bowers was formed in 1990 by Bruce Bowers. Since that time, the firm has completed hundreds of residential projects in the McLean, North Arlington, Oakton, Vienna, Falls Church, Fairfax and Great Falls, Virginia areas. Bowers is one of Northern Virginia’s most respected, design/build firms, inside and outside the industry.</p>
+					</div>
+					
+					<div class="col-sm-2">
+						<h6>Navigation</h6>
+						<ul class="unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Links</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					
+					<div class="col-sm-2">
+						<h6>Follow Us</h6>
+						<ul class="unstyled">
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Google Plus</a></li>
+						</ul>
+					</div>
+					
+					<div class="col-sm-2">
+						<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Brad</h6>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+		
+		<script src="bootstrap/js/bootstrap.min.js"></script>
 
-	</div>
-	<footer>
-		<div class="container">
-		<div class="row">
-			<div class="col-sm-2">
-			<h6>Copyright &copy; 2015 Interior</h6>
-			</div>
-			
-			<div class="col-sm-4">
-				<h6>About Us</h6>
-				<p>Proudly, Bowers Design Build, Inc. is a family-owned and operated business. Bowers was formed in 1990 by Bruce Bowers. Since that time, the firm has completed hundreds of residential projects in the McLean, North Arlington, Oakton, Vienna, Falls Church, Fairfax and Great Falls, Virginia areas. Bowers is one of Northern Virginia’s most respected, design/build firms, inside and outside the industry.</p>
-			</div>
-			
-			<div class="col-sm-2">
-				<h6>Navigation</h6>
-				<ul class="unstyled">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Links</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-			
-			<div class="col-sm-2">
-				<h6>Follow Us</h6>
-				<ul class="unstyled">
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Google Plus</a></li>
-				</ul>
-			</div>
-			
-			<div class="col-sm-2">
-				<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Brad</h6>
-			</div>
-		</div>
-	</div>
-	</footer>
-	<script src="http://code.jquery.com/jquery.js"></script>
-	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
-	
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-
-	<script src="includes/js/script.js"></script>
-	
+		<script src="includes/js/script.js"></script>
+		
 	</body>
-</html>
+	</html>
 
