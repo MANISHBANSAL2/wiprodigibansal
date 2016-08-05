@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+ <title>ASIA LIFE EXPECTANCY</title>
+<meta charset="utf-8">
+<style>
+
+.axis text {
+ font: 10px sans-serif;
+}
+
+.axis line,
+.axis path {
+ fill: none;
+ stroke: #000;
+ shape-rendering: crispEdges;
+}
+
+.axis--x path {
+ display: none;
+}
+
+</style>
+</head>
+
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var causes = ["LifeExpectancyAtBirthMale(years)", "LifeExpectancyAtBirthFemale(years)"];
+
+//var parseDate = d3.time.format("%m/%Y").parse;
+
+var margin = {top: 20, right: 50, bottom: 30, left: 20},
+   width = 950 - margin.left - margin.right,
+   height = 500 - margin.top - margin.bottom;
+
+var x = d3.scale.ordinal()
+   .rangeRoundBands([0, width]);
+
+var y = d3.scale.linear()
+   .rangeRound([height, 0]);
+
+var z = ["red","green"];
+var xAxis = d3.svg.axis()
+   .scale(x)
+   .orient("bottom");
+   // .tickFormat(d3.time.format("%b"));
+
+var yAxis = d3.svg.axis()
+   .scale(y)
+   .orient("right");
+
+var svg = d3.select("body").append("svg")
+   .attr("width", width + margin.left + margin.right)
+   .attr("height", height + margin.top + margin.bottom)
+ .append("g")
+   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.json("../JSON/lifeExpectancy.json", function(error, crimea) {
+ if (error) throw error;
+
+ console.log("Inside");
+
+ var layers = d3.layout.stack()(causes.map(function(c) {
+   return crimea.map(function(d) {
+     return {x: d.year, y: d[c]};
+   });
+ }));
+
+ x.domain(layers[0].map(function(d) { return d.x; }));
+ y.domain([0, d3.max(layers[layers.length - 1], function(d) { return d.y0 + d.y; })]).nice();
+
+ var layer = svg.selectAll(".layer")
+     .data(layers)
+   .enter().append("g")
+     .attr("class", "layer")
+     .style("fill", function(d,i) { return z[i]; } );
+
+ layer.selectAll("rect")
+     .data(function(d) { return d; })
+   .enter().append("rect")
+     .attr("x", function(d) { return x(d.x); })
+     .attr("y", function(d) { return y(d.y + d.y0); })
+     .attr("height", function(d) { return y(d.y0) - y(d.y + d.y0); })
+     .attr("width", x.rangeBand() - 1);
+
+  svg.append("rect")
+     .attr("x", 50 )
+     .attr("y", 60 )
+     .style("fill", "green")
+     .attr("width", 20)
+     .attr("height", 15)
+  svg.append("text")
+     .attr("x", 80 )
+     .attr("y",75)
+     .style("fill", "green")
+     .style("font-size", "30px")
+     .text("male")
+
+   svg.append("rect")
+      .attr("x", 150 )
+      .attr("y", 60 )
+      .style("fill", "red")
+      .attr("width", 20)
+      .attr("height", 15)
+   svg.append("text")
+      .attr("x", 180 )
+      .attr("y", 75 )
+      .style("fill", "red")
+      .style("font-size", "30px")
+      .text("female")
+
+   svg.append("rect")
+      .attr("x", 220 )
+      .attr("y", 470 )
+      .style("fill", "black")
+      .attr("width", 20)
+      .attr("height", 15)
+   svg.append("text")
+      .attr("x", 250 )
+      .attr("y", 477 )
+      .attr("width", 650)
+      .style("fill", "black")
+      .style("font-size", "20px")
+      .text("year")
+
+  svg.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("x",0 - (height / 2))
+    .attr("y",0-(margin.left))
+    .attr("dy", "1em")
+    .style("font-size", "30px")
+    .style("text-anchor", "middle")
+    .style("font-family","Aerial")
+    .text("Life Expenditure In Asia");
+
+ svg.append("g")
+     .attr("class", "axis axis--x")
+     .attr("transform", "translate(0," + height + ")")
+     .call(xAxis);
+
+
+ svg.append("g")
+     .attr("class", "axis axis--y")
+     .attr("transform", "translate(" + width + ",0)")
+     .call(yAxis);
+});
+
+// // function type(d) {
+//  //d.date = parseDate(d.date);
+//  causes.forEach(function(c) { d[c] = +d[c]; });
+//  return d;
+// }
+
+</script>
+</body>
+</html>

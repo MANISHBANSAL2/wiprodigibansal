@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+ <title>
+   Bar chart
+ </title>
+ <style>
+
+.axis {
+ font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+ fill: none;
+ stroke: #000;
+ shape-rendering:crispEdges;
+}
+
+</style>
+
+</head>
+<body>
+ <script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var margin={top: 20, right: 20, bottom: 70, left: 40};
+
+//inner space of graph
+var width=900-margin.left-margin.right,
+   height=500-margin.top-margin.bottom;
+
+
+//define x and y
+var x = d3.scale.ordinal().rangeRoundBands([0, 800], .2);
+var y = d3.scale.linear().range([height, 0]);
+
+
+//orientation of xaxis and yaxis
+var xAxis= d3.svg.axis().scale(x).orient("bottom");
+var yAxis=d3.svg.axis().scale(y).orient("left");
+
+//svg attribute defn
+var svg=d3.select("body").append("svg")
+       .attr("width",width + margin.left + margin.right)
+       .attr("height",height + margin.top + margin.bottom)
+       .append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+//getting data from json file
+d3.json("../JSON/topLifeExp.json", function(error, data) {
+
+   data.forEach(function(d) {
+       d.countryName =d.countryName;
+       d.total = +d.total;
+
+   });
+
+//scale x and y data
+x.domain(data.map(function(d) { return d.countryName; }));
+//var arr=["Iceland","Sweden","Japan","Switzerland","Norway"];
+//x.domain(["Iceland","Sweden","Japan","Switzerland","Norway"])
+//if()
+y.domain([0, d3.max(data, function(d) { return d.total; })]);
+
+//Append our x-axis
+   svg.append("g")
+     .attr("class", "x axis")
+     .attr("transform", "translate(0," + height + ")")
+     .call(xAxis)
+   .selectAll("text")
+     .style("text-anchor", "end")
+     .attr("dx", "-.8em")
+     .attr("dy", "-.55em")
+     .attr("transform", "rotate(-90)" );
+
+
+//Append our yaxis
+svg.append("g")
+     .attr("class", "y axis")
+     .call(yAxis)
+   .append("text")
+     .attr("transform", "rotate(-90)")
+     .attr("y", 6)
+     .attr("dy", ".300em")
+     .style("text-anchor", "end")
+     .text("Value")
+     .style("font-size","20px");
+
+var z=["red","green","yellow","blue","black"];
+//Add bar to chart
+svg.selectAll("bar")
+     .data(data)
+   .enter().append("rect")
+     .style("fill", function(d,i) { return z[i]; } )
+     .attr("x", function(d) { return x(d.countryName); })
+     .attr("width", x.rangeBand())
+     .attr("y", function(d) { return y(d.total); })
+     .attr("height", function(d) { return height - y(d.total); });
+
+});
+
+</script>
+
+</body>
+</html>
